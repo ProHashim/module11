@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  // declare these variables
   let noteTitle;
   let noteText;
   let saveNoteBtn;

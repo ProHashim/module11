@@ -27,6 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let activeNote = {};
 
   // Define a function to fetch notes from the API using a GET request.
+//   const getNotes: Declares a constant named getNotes to store an arrow function.
+
+// () =>: Arrow function syntax, indicating that getNotes is a function that takes no parameters.
+
+// fetch("/api/notes", { /* ... */ }): Uses the Fetch API to make a network request. The first parameter is the URL ("/api/notes") to which the request is made.
+
+// { method: "GET", /* ... */ }: The second parameter is an options object for the fetch request. In this case, it specifies that the HTTP method is "GET".
+
+// headers: { "Content-Type": "application/json" }: Specifies the headers for the request. In this case, it sets the "Content-Type" header to "application/json", indicating that the server should expect a JSON-formatted response.
+
+
   const getNotes = () =>
     fetch("/api/notes", {
       method: "GET",
